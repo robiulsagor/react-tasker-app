@@ -87,7 +87,7 @@ const TaskModal = ({ closeModal }: { closeModal: () => void }) => {
 
             <div className="flex items-center justify-between flex-col sm:flex-row gap-5">
                 <div className="flex-1 w-full">
-                    <label htmlFor="tags" className="text-slate-200 block">Tags</label>
+                    <label htmlFor="tags" className="text-slate-200 block">Tags <span className="text-sm text-slate-400"> (Comma separated)</span> </label>
                     <input type="text" name="tags" id="tags" placeholder="Task tags" onChange={handleTags} className="p-2 mt-1 outline-none rounded w-full " />
                 </div>
                 <div className="flex-1  w-full">
