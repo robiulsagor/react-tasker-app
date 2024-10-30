@@ -43,15 +43,15 @@ const Task = ({ id, isFaviourite, title, description, priority, tags }: TaskProp
                 {description}
             </td>
             <td className=" text-center capitalize">
-                {priority}
-            </td>
-            <td className=" text-center capitalize w-[200px]">
                 {tags.map((tag, i) => (
                     <span key={i} className={`border rounded px-2 py-1 mr-1 `}
                         style={{ background: taskColors[i] || '#666' }}>
-                        {tag}
+                        {tag}   
                     </span>
                 ))}
+            </td>
+            <td className=" text-center capitalize w-[200px]">
+            {priority}
             </td>
             <td className=" text-center capitalize text-sm">
                 <button className="text-blue-500 mr-2"

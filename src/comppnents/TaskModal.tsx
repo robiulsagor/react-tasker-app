@@ -19,7 +19,7 @@ const TaskModal = ({ closeModal }: { closeModal: () => void }) => {
         title: "",
         description: "",
         tags: [],
-        priority: "",
+        priority: "High",
         isFavourite: false
     })
 
@@ -47,7 +47,6 @@ const TaskModal = ({ closeModal }: { closeModal: () => void }) => {
         if (input) {
             setTasks(prev => [...prev, input])
             setModalOpen(false)
-
         }
     }
 
